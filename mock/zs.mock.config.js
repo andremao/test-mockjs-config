@@ -1,17 +1,11 @@
 module.exports = {
   requests: [
     {
-      type: 'get',
-      url: '/users',
+      type: 'post',
+      url: '/login',
       tpl: {
-        'users|1-10': [
-          {
-            name: '@CNAME()',
-            'age|18-60': 1,
-            mobile: /1[3578]\d{9}/,
-            email: '@EMAIL()',
-          },
-        ],
+        code: 200,
+        message: 'ok',
       },
     },
   ],

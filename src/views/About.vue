@@ -9,7 +9,8 @@ import { getUsers } from '../api/user';
 export default {
   name: 'About',
   async mounted() {
-    await getUsers();
+    const res = await getUsers();
+    console.log(res);
   },
 };
 </script>
