@@ -16,7 +16,7 @@ export default {
     HelloWorld,
   },
   async mounted() {
-    const res = await login();
+    const res = await login({ uname: 'andremao', pwd: 'qwe123' });
     console.log(res);
   },
 };
